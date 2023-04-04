@@ -16,9 +16,9 @@ int main()
 	} for (int i = 0; i < n; i++) {
 		arrhelp[i] = arr[i];
 	}
-	for (int i = 1; i < n; i++) {
-		arr[i] = arrhelp[i - 1];
-	} arr[0] = arrhelp[n - 1];
+	for (int i = 0; i < n; i++) {
+		arr[i] = arrhelp[i + 1];
+	} arr[n-1] = arrhelp[0];
 	int n1;
 	file >> n1;
 	int* arr1 = new int[n1];
